@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+        <div class="row px-2 mx-0 g-4">
+            <!-- first main col -->
+            <div class="col-lg-4 ">
+                <div class="card  border colorcard px-0 mx-0" style="background: #F5F5F5;">
+                    <div class="card-wrap  px-3 py-3 mt-2">
+                        <h5 class="heading">
+                            Select ID Picture Path
+                            <img src="img/gallery.png" class="float-end" alt="">
+                        </h5>
+                        <h6>(Tip: Upload a compatible file type like Jpg, Jpeg & Png)</h6>
+                        <div class="d-flex align-items-center mt-2">
+                            <input type="text" id="text" class="me-2 bg-white border-0 "
+                                placeholder="D:\Projects\Labview\Logo work\photorealistic.png">
+                            <button class="btn-1 border-0 ms-auto">
+                                <img src="img/Icon.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="check d-flex align-items-center mt-3">
+                            <input type="checkbox" id="checkbox">
+                            <span class="ms-2">Load last picture when program starts off.</span>
+                        </div>
+                        <h2 class="mt-1" id="Pic">ID Picture</h2>
+                        <div class="img"></div>
+                    </div>
+                </div>
+                <div class="bg-transparent "> <button class="btnhead mt-3  ">Play</button>
+                </div>
+            </div>
+
+
+            <!-- second main col -->
+            <div class="col-lg-4 ">
+                <div class="card audio colorcard2  ">
+                    <div class="card-wrap  colorcard2 pt-2 px-3 mt-3 ">
+
+                        <h5 class="heading">
+                            Select ID Audio Path
+                            <img src="img/musicnote.png" class="float-end" alt="">
+                        </h5>
+                        <h6 class="text-muted muted d-inline">(Tip: Upload a compatible file type like mp3, AIFF,
+                            FLAC)
+                        </h6>
+                        <div class="d-flex align-items-center mt-2">
+                            <input type="text" id="text" class="me-2 bg-white border-0 "
+                                placeholder="D:\Projects\Labview\Logo work\photorealistic.png">
+                            <button class="btn-1 border-0 ms-auto">
+                                <img src="img/Icon.png" alt="">
+                            </button>
+                        </div>
+
+                        <div class="check d-flex align-items-center mt-3">
+                            <input type="checkbox" id="checkbox" class="me-2">
+                            <span>Load last picture when program starts off.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content bg-white mt-0 pt-2">
+                    <h2>Set Up Cluster</h2>
+                </div>
+                <div class="row bg-white" id="inputs">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="row g-3">
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <label for="">Select Signal Input Channel</label>
+                                <select id="form" class="form-select " required>
+                                    <option value="" selected>DevO/AiO</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <label for="">Select Lazer Output Channel</label>
+                                <select id="form" class="form-select " required>
+                                    <option value="" selected>DevO/AiO</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 com-md-12 col-sm-12">
+                                <label for="">Select Buzzer Output Channel</label>
+                                <select id="form" class="form-select " required>
+                                    <option value="" selected>DevO/AiO</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <label for="">Scan Rate</label>
+                                <select id="form" class="form-select " required>
+                                    <option value="" selected>50</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <label for="">Seconds to Play</label>
+                                <select id="form" class="form-select " required>
+                                    <option value="" selected>50</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                                <label for="">RAC Positive Threshold</label> <select id="form" class="form-select "
+                                    required>
+                                    <option value="" selected>50</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </div>
+                            <div class="form-check form-switch px-2 mx-0 mt-3 ">
+                                <label class="form-check-label " for="activateBuzz">Activate Buzz</label>
+                                <input class="form-check-input float-end mt-0 pt-0 " type="checkbox" id="activateBuzz"
+                                    style="height: 31px; width: 51px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- start modal  -->
+                <!-- Modal Trigger Button -->
+
+                <div class="d-flex justify-content-center mt-2">
+                    <div class="headbtn2 bg-transparent w-100">
+                        <button type="button" class="btnhead2 w-100 mt-2 " data-bs-toggle="modal"
+                            data-bs-target="#customModal">Load Picture</button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="customModal" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-custom"> <!-- Custom modal width class -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="customModalLabel">Static Modal</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>This modal has a fixed width of 1240px and cannot be closed by clicking outside or
+                                    pressing Esc.</p>
+                                <!-- Add your content here -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- end modal -->
+            </div>
+
+            <!-- third main col -->
+            <div class="col-lg-4 ">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 mt-0 pt-0 ">
+                        <h2 class="h2">Laser</h2>
+                        <div class="card blank-content border-0 w-100 py-2 ">
+
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 py-2">
+                        <h2 class="h2 mt-2">Audio</h2>
+                        <div class="card blank-content border-0 w-100">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- graph -->
+    <div class="container-fluid mt-5">
+        <div class="row last">
+            <div class="col-lg-12">
+                <div class=""> <img src="img/Frame32.png" class="w-100 px-3" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
