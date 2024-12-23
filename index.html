@@ -171,17 +171,225 @@
 
                 <div class="modal fade" id="customModal" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="customModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-custom"> <!-- Custom modal width class -->
+                    <div class="modal-dialog modal-custom "> <!-- Custom modal width class -->
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="customModalLabel">Static Modal</h5>
+                            <div class="modal-header border-bottom-0">
+                                <h5 class="modal-title" id="customModalLabel">Picture Analysis</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-lg-4 col-md-12 col-sm-12 ps-3">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-12">
+                                                <h3 class="modalh">Current RAC Signals Number</h3>
+                                                <input type="number" id="num" value="50">
+                                            </div>
+                                            <div class="col-lg-6 col-md-12">
+                                                <h3 class="modalh">Picture Selector</h3>
+                                                <input type="number" id="num" placeholder="Original Picture">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8  col-md-12 col-sm-12">
+                                        <div
+                                            class="btnd mt-2 pt-1 float-end d-flex justify-content-center align-items-center gap-2 flex-wrap">
+                                            <button
+                                                class="btncol me-2 d-flex justify-content-center align-items-center ">
+                                                <span><img class="ms-auto" src="img/formkit_start.png"
+                                                        alt=""></span>Start Picture Analysis
+                                            </button>
+
+                                            <button class="btncol2 d-flex justify-content-center align-items-center ">
+                                                <span><img class="ms-auto" src="img/material-symbols_stop-outline.png"
+                                                        alt=""></span>Stop Picture Analysis
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                             <div class="modal-body">
-                                <p>This modal has a fixed width of 1240px and cannot be closed by clicking outside or
-                                    pressing Esc.</p>
-                                <!-- Add your content here -->
+                                <div class="container-fluid ">
+                                    <div class="row gap-4">
+                                        <div class="col-9 canvas"></div>
+                                        <div class="col picture">
+                                            <div class="card bg-transparent border-0 ">
+                                                <div class="card-wrapper">
+                                                    <h5 class="heading2 mt-3">
+                                                        Picture Path
+                                                        <img src="img/gallery.png" class="float-end" height="16px"
+                                                            width="16px" alt="">
+                                                    </h5>
+                                                    <p class="modalp2">(Tip: Upload a compatible file type like Jpg,
+                                                        Jpeg & Png)</p>
+                                                    <input type="text" id="text2"
+                                                        class="form-control me-2 bg-white border-0 py-1 px-2 rounded"
+                                                        placeholder="D:\Projects\Labview\Logo work\photorealistic.png">
+                                                    <button class="btnmd  btn-lg w-100  mt-2 border-0 rounded">Load
+                                                        Picture</button>
+                                                    <button class="btnmd  btn-lg w-100  mt-2 border-0 rounded">Generate
+                                                        Report</button>
+                                                    <h3 class="mt-2 mb-0 h3"> Select Dimensions</h3>
+                                                    <div class="axis">
+                                                        <div class="row">
+                                                            <div class="col-lg-6 ">
+                                                                <h3 class="axis2">X-Axis</h3>
+                                                                <div class="form-group">
+                                                                    <input type="number" id="xAxisInput"
+                                                                        class="form-control w-100" value="0" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 ">
+                                                                <h3 class="axis2">Y-Axis</h3>
+                                                                <div class="form-group">
+                                                                    <input type="number" id="yAxisInput"
+                                                                        class="form-control w-100" value="0" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12  ">
+                                                                <div class="container bg-white scroll mt-3"
+                                                                    style="overflow-y: auto;">
+                                                                    <div class="row ">
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class=" label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="#ff01ff"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6  col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">RAC
+                                                                                No.</label>
+                                                                            <input type="text" value="1"
+                                                                                class="text-center form-control1 rounded">
+                                                                        </div>
+                                                                        <!-- color input  -->
+                                                                        <div
+                                                                            class="col-lg-6 col-md-6 col-sm-12 mt-3 d-flex align-items-center">
+                                                                            <label for="" class="label">Color</label>
+                                                                            <input type="color" value="1"
+                                                                                class="text-center form-control1 rounded ">
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
