@@ -97,14 +97,17 @@ span {
 
 .btnhead {
     width: 100%;
-    border-radius: 8px;
     height: 48px;
-    border: 1px solid #016F82;
-    padding: 12px 20px 12px 20px;
+    top: 622px;
+    left: 508px;
+    padding: 12px;
     gap: 8px;
+    border-radius: 8px;
+    border: 1px;
     opacity: 0px;
-    background-color: transparent;
-    color: #016F82;
+    color: white;
+    background-color: #016F82;
+
 }
 
 /* second main col */
@@ -150,7 +153,7 @@ label {
 }
 
 .btnhead2 {
-    width: 424px;
+    width: 100%;
     height: 48px;
     top: 622px;
     left: 508px;
@@ -161,6 +164,16 @@ label {
     opacity: 0px;
     color: white;
     background-color: #016F82;
+
+    width: 100%;
+    border-radius: 8px;
+    height: 48px;
+    border: 1px solid #016F82;
+    padding: 12px 20px 12px 20px;
+    gap: 8px;
+    opacity: 0px;
+    background-color: transparent;
+    color: #016F82;
 }
 
 #activateBuzz {
@@ -370,7 +383,8 @@ label {
     opacity: 0px;
 
 }
-.form-label{
+
+.form-label {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
@@ -378,7 +392,8 @@ label {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    }
+}
+
 .axis2 {
     font-family: Roboto;
     font-size: 14px;
@@ -397,7 +412,6 @@ label {
     gap: 0px;
     border-radius: 8px;
     border: 1px 0px 0px 0px;
-    justify: space-between;
     opacity: 0px;
 
 }
@@ -463,4 +477,148 @@ label {
     opacity: 0px;
     color: red;
 
+}
+
+/* Last */
+
+.menu-item span{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #5F6368;
+    text-align: left;
+    text-decoration-skip-ink: none;
+
+}
+
+.nav-link {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px;
+
+    text-align: left;
+    color: #016F82;
+    text-decoration-skip-ink: none;
+
+}
+
+
+.nav-tabs .nav-link.active {
+    background-color: #016F82;
+    color: white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+
+
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+}
+
+/* Remove border-radius from tab container */
+.nav-tabs {
+    border-radius: 0;
+}
+
+.autoh2 {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    text-decoration-skip-ink: none;
+    color: #5F6368;
+    padding-bottom: 1px;
+}
+
+.autotablabel {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #AFAFAF;
+
+}
+
+.manualtablabel {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #AFAFAF;
+}
+
+/* Remove margin and padding from h2 and label */
+.autoh2,
+.autotablabel {
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: Adjust the spacing between h2 and label */
+.autoh2 {
+    margin-top: 5px;
+    /* Adjust as needed */
+}
+
+.autotablabel {
+    margin-top: 1px;
+    /* Remove any top margin */
+}
+
+
+#peak-deltaT {
+    width: 141px;
+    height: 36px;
+    padding: 8px 14px 8px 14px;
+    gap: 0px;
+    border-radius: 8px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.nav-link {
+    color: #016F82;
+}
+
+.color {
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.vertical-line-text {
+    position: relative;
+    display: inline-block;
+    height: 200px;
+    border-left: 2px solid black;
+    /* Vertical line */
+}
+
+.vertical-line-text h3 {
+    position: absolute;
+    top: -86%;
+    left: 12%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    margin-left: 22px;
 }

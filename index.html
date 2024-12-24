@@ -431,13 +431,73 @@
     </div>
 
     <!-- graph -->
-    <div class="container-fluid mt-5">
-        <div class="row last">
-            <div class="col-lg-12">
-                <div class=""> <img src="img/Frame32.png" class="w-100 px-3" alt="">
+    <div class="container-fluid mt-4 px-5 " style="position: relative;">
+        <div class="row g-2" style="background-color: #F5F5F5;">
+            <!-- Chart Section -->
+            <div class="col-lg-10">
+                <div class="chart-container me-3">
+                    <img src="img/Frame7.png" class="w-100 "alt="Graph Image">
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div class="col-lg-2 mt-0 pt-0">
+                <div class="list  mt-2">
+                    <div class="menu-item d-flex justify-content-between align-items-center">
+                        <span>Channel 1</span>
+                        <img src="img/Frame52.png"  alt="Icon">
+                    </div>
+                    <div class="menu-item d-flex justify-content-between align-items-center">
+                        <span>Peak Values</span>
+                        <img src="img/Frame53.png" alt="Icon">
+                    </div>
+                    <div class="menu-item d-flex justify-content-between align-items-center">
+                        <span>RAC for Peaks</span>
+                        <img src="img/Frame54.png" alt="Icon">
+                    </div>
+                    <div class="menu-item d-flex justify-content-between align-items-center">
+                        <span>Valleys Values</span>
+                        <img src="img/Frame58.png" alt="Icon">
+                    </div>
+                    <div class="menu-item d-flex justify-content-between align-items-center">
+                        <span>RAC for Valleys</span>
+                        <img src="img/Frame52.png" alt="Icon">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <div class="color bg-white  border-4">
+                            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="auto-tab" data-bs-toggle="tab" href="#auto"
+                                        role="tab" aria-controls="auto" aria-selected="true">Auto Selection</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="manual-tab" data-bs-toggle="tab" href="#manual" role="tab"
+                                        aria-controls="manual" aria-selected="false">Manual Selection</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active ms-5" id="auto" role="tabpanel"
+                                    aria-labelledby="auto-tab">
+                                    <h2 class="autoh2">Recommended Peaks DeltaT</h2>
+                                    <label for="peak-deltaT" class="autotablabel">Peak DeltaT</label>
+                                    <input type="number" id="peak-deltaT" class="form-control" value="0.08" step="0.01">
+                                </div>
+
+                                <div class="tab-pane fade ms-5 mt-2" id="manual" role="tabpanel"
+                                    aria-labelledby="manual-tab">
+                                    <label for="peak-deltaT" class="manualtablabel">Peak DeltaT</label>
+                                    <input type="number" id="peak-deltaT" class="form-control" value="0.08" step="0.01">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="vertical-line-text">
+        <h3>Amplitude</h3>
     </div>
 </body>
 
