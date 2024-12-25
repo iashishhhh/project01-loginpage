@@ -228,6 +228,7 @@ span {
 
 .modal-dialog {
     max-width: 90%;
+    margin: 0 auto;
 }
 
 .modal-title {
@@ -528,7 +529,6 @@ span {
     font-family: Roboto;
     font-size: 10px;
     font-weight: 700;
-    line-height: 28px;
     text-align: left;
     text-decoration-skip-ink: none;
     color: #5F6368;
@@ -558,7 +558,6 @@ span {
     color: #AFAFAF;
 }
 
-/* Remove margin and padding from h2 and label */
 .autoh2,
 .autotablabel {
     margin: 0;
@@ -568,12 +567,28 @@ span {
 /* Optional: Adjust the spacing between h2 and label */
 .autoh2 {
     margin-top: 5px;
-    /* Adjust as needed */
 }
 
+.autotablabel1 {
+    margin-top: 1px;
+    line-height: 2px;
+
+}
 .autotablabel {
     margin-top: 1px;
-    /* Remove any top margin */
+    line-height: 2px;
+
+}
+.autotablabel1 {
+    margin-top: -5px;
+    line-height: 2px;
+    font-size: 10px;
+    color: #AFAFAF;
+}
+.autotablabel1 span {
+color: #5F6368;
+font-size: 10px;
+
 }
 
 
@@ -587,7 +602,14 @@ span {
     opacity: 0px;
 
 }
+.peaks{
+    font-size: 10px;
+    line-height: 1px;
 
+}
+div#myTabContent {
+    padding-bottom: 11px;
+}
 .nav-link {
     color: #016F82;
 }

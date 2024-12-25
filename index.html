@@ -428,77 +428,87 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-  
-    <!-- graph -->
-    <div class="container-fluid mt-4 " style="position: relative;">
-        <div class="row g-2 mx-3" >
-            <!-- Chart Section -->
-            <div class="col-lg-10 px-0 py-2" style="background-color: #F5F5F5;">
-                <div class="chart-container me-3">
-                    <img src="img/Frame7.png" class="w-100 "alt="Graph Image">
-                </div>
-            </div>
-            <!-- Sidebar -->
-            <div class="col-lg-2 mt-2 pt-0 ms-auto px-0 mx-0"  style="background-color: #F5F5F5;">
-                <div class="list  mt-2 ms-3 ">
-                    <div class="menu-item d-flex justify-content-between align-items-center">
-                        <span class="ms-lg-2">Channel 1</span>
-                        <img src="img/Frame52.png" class="me-lg-4" alt="Icon">
-                    </div>
-                    <div class="menu-item d-flex justify-content-between align-items-center">
-                        <span class="ms-lg-2">Peak Values</span>
-                        <img src="img/Frame53.png" class="me-lg-4" alt="Icon">
-                    </div>
-                    <div class="menu-item d-flex justify-content-between align-items-center">
-                        <span class="ms-lg-2">RAC for Peaks</span>
-                        <img src="img/Frame54.png" class="me-lg-4" alt="Icon">
-                    </div>
-                    <div class="menu-item d-flex justify-content-between align-items-center">
-                        <span class="ms-lg-2">Valleys Values</span>
-                        <img src="img/Frame58.png" class="me-lg-4" alt="Icon">
-                    </div>
-                    <div class="menu-item d-flex justify-content-between align-items-center">
-                        <span class="ms-lg-2">RAC for Valleys</span>
-                        <img src="img/Frame52.png" class="me-lg-4" alt="Icon">
-                    </div>
-                </div>
-                <div class="row mt-1 ">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <div class="color bg-white  border-4">
-                            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="auto-tab" data-bs-toggle="tab" href="#auto"
-                                        role="tab" aria-controls="auto" aria-selected="true">Auto Selection</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link " id="manual-tab" data-bs-toggle="tab" href="#manual" role="tab"
-                                        aria-controls="manual" aria-selected="false">Manual Selection</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active ms-5" id="auto" role="tabpanel"
-                                    aria-labelledby="auto-tab">
-                                    <h2 class="autoh2">Recommended Peaks DeltaT</h2>
-                                    <label for="peak-deltaT" class="autotablabel">Peak DeltaT</label>
-                                    <input type="number" id="peak-deltaT" class="form-control" value="0.08" step="0.01">
-                                </div>
 
-                                <div class="tab-pane fade ms-5 mt-2" id="manual" role="tabpanel"
-                                    aria-labelledby="manual-tab">
-                                    <label for="peak-deltaT" class="manualtablabel">Peak DeltaT</label>
-                                    <input type="number" id="peak-deltaT" class="form-control" value="0.08" step="0.01">
+            <!--  -->
+
+
+            <!-- graph -->
+            <div class="container-fluid mt-4" style="position: relative;">
+                <div class="row g-3 py-2">
+                    <!-- Chart Section (col-10) -->
+                    <div class="col-lg-10 col-md-12 col-sm-12 px-2 py-2" style="background-color: #F5F5F5;  ">
+                        <div class="chart-container h-100 ">
+                            <img src="img/Frame7.png" class="w-100 h-100 object-fit-cover" alt="Graph Image">
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Section (col-2) -->
+                    <div class="col-lg-2 col-md-12 col-sm-12 px-2 pb-1" style="background-color: #F5F5F5;">
+                        <div class="list mt-2  pt-1">
+                            <div class="menu-item d-flex justify-content-between align-items-center px-3 ">
+                                <span>Channel 1</span>
+                                <img src="img/Frame52.png" alt="Icon">
+                            </div>
+                            <div class="menu-item d-flex justify-content-between align-items-center px-3  ">
+                                <span>Peak Values</span>
+                                <img src="img/Frame53.png" alt="Icon">
+                            </div>
+                            <div class="menu-item d-flex justify-content-between align-items-center px-3  ">
+                                <span>RAC for Peaks</span>
+                                <img src="img/Frame54.png" alt="Icon">
+                            </div>
+                            <div class="menu-item d-flex justify-content-between align-items-center px-3 ">
+                                <span>Valleys Values</span>
+                                <img src="img/Frame58.png" alt="Icon">
+                            </div>
+                            <div class="menu-item d-flex justify-content-between align-items-center px-3 ">
+                                <span>RAC for Valleys</span>
+                                <img src="img/Frame52.png" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="row mt-1">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="color bg-white border-4 w-auto">
+                                    <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                                        <li class="nav-item w-50" role="presentation">
+                                            <a class="nav-link  active" id="auto-tab" data-bs-toggle="tab" href="#auto"
+                                                role="tab" aria-controls="auto" aria-selected="false" tabindex="-1">Auto
+                                                Selection</a>
+                                        </li>
+                                        <li class="nav-item w-50" role="presentation">
+                                            <a class="nav-link text-nowrap" id="manual-tab" data-bs-toggle="tab"
+                                                href="#manual" role="tab" aria-controls="manual"
+                                                aria-selected="true">Manual Selection</a>
+                                        </li>
+
+                                    </ul>
+                                    <div class="tab-content" id="myTabContent">
+                                        <div class="tab-pane fade show active mt-1 mb-0 ms-5 " id="auto" role="tabpanel"
+                                            aria-labelledby="auto-tab">
+                                            <label for="peak-deltaT" class="autotablabel1"> <span>Recommended Peaks
+                                                    DeltaT</span> <br> Peak DeltaT</label>
+                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08"
+                                                step="0.01">
+                                        </div>
+
+                                        <div class="tab-pane fade ms-5 mt-2" id="manual" role="tabpanel"
+                                            aria-labelledby="manual-tab">
+                                            <label for="peak-deltaT" class="manualtablabel">Peak DeltaT</label>
+                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08"
+                                                step="0.01">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- <div class="vertical-line-text">
+
+
+
+            <!-- <div class="vertical-line-text">
         <h3>Amplitude</h3>
     </div> -->
 </body>
