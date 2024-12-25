@@ -161,16 +161,7 @@ span {
     border-radius: 8px;
     border: 1px;
     opacity: 0px;
-    color: white;
-    background-color: #016F82;
-
-    width: 100%;
-    border-radius: 8px;
-    height: 48px;
     border: 1px solid #016F82;
-    padding: 12px 20px 12px 20px;
-    gap: 8px;
-    opacity: 0px;
     background-color: transparent;
     color: #016F82;
 }

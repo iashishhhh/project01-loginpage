@@ -468,39 +468,35 @@
                             </div>
                         </div>
                         <div class="row mt-1">
-                            <div class="col-lg-12 col-md-12 col-sm-12">
-                                <div class="color bg-white border-4 w-auto">
+                            <div class="col-lg-12 col-md-12 col-sm-12 h-100 d-flex flex-column ">
+                                <div class="color bg-white border-4 w-auto flex-grow-1">
                                     <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
                                         <li class="nav-item w-50" role="presentation">
-                                            <a class="nav-link  active" id="auto-tab" data-bs-toggle="tab" href="#auto"
-                                                role="tab" aria-controls="auto" aria-selected="false" tabindex="-1">Auto
-                                                Selection</a>
+                                            <a class="nav-link active" id="auto-tab" data-bs-toggle="tab" href="#auto"
+                                               role="tab" aria-controls="auto" aria-selected="false" tabindex="-1">Auto Selection</a>
                                         </li>
                                         <li class="nav-item w-50" role="presentation">
-                                            <a class="nav-link text-nowrap" id="manual-tab" data-bs-toggle="tab"
-                                                href="#manual" role="tab" aria-controls="manual"
-                                                aria-selected="true">Manual Selection</a>
+                                            <a class="nav-link text-nowrap" id="manual-tab" data-bs-toggle="tab" href="#manual"
+                                               role="tab" aria-controls="manual" aria-selected="true">Manual Selection</a>
                                         </li>
-
                                     </ul>
-                                    <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active mt-1 mb-0 ms-5 " id="auto" role="tabpanel"
-                                            aria-labelledby="auto-tab">
-                                            <label for="peak-deltaT" class="autotablabel1"> <span>Recommended Peaks
-                                                    DeltaT</span> <br> Peak DeltaT</label>
-                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08"
-                                                step="0.01">
+                                    <div class="tab-content flex-grow-1" id="myTabContent">
+                                        <div class="tab-pane fade show active mt-1 mb-0 ms-5" id="auto" role="tabpanel"
+                                             aria-labelledby="auto-tab">
+                                            <label for="peak-deltaT" class="autotablabel1">
+                                                <span>Recommended Peaks DeltaT</span> <br> Peak DeltaT
+                                            </label>
+                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08" step="0.01">
                                         </div>
-
-                                        <div class="tab-pane fade ms-5 mt-2" id="manual" role="tabpanel"
-                                            aria-labelledby="manual-tab">
+                            
+                                        <div class="tab-pane fade ms-5 mt-2" id="manual" role="tabpanel" aria-labelledby="manual-tab">
                                             <label for="peak-deltaT" class="manualtablabel">Peak DeltaT</label>
-                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08"
-                                                step="0.01">
+                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08" step="0.01">
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>

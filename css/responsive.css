@@ -126,3 +126,18 @@
         height: 265px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+
+    .scroll {
+        height: 184px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .scroll {
+        height: 247px;
+
+    }
+}
