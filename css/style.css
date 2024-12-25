@@ -616,19 +616,7 @@ div#auto {
     border: 1px solid #EEEEEE
 }
 
-div.tab-pane{
-    padding-bottom: 11px;
-    padding-left: 27px;
-    padding-right: 20px;
-    padding-top: 7px;
-}
 
-div#manual {
-    padding-bottom: 11px;
-    padding-left: 27px;
-    padding-right: 20px;
-    padding-top: 10px;
-}
 
 #maindiv {
     border-radius: 4px;
