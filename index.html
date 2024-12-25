@@ -468,42 +468,49 @@
                             </div>
                         </div>
                         <div class="row mt-1">
-                            <div class="col-lg-12 col-md-12 col-sm-12 h-100 d-flex ">
-                                <div class="color bg-white border-4 w-auto flex-grow-1 ">
+                            <div class="col-12 h-100">
+                                <div class="bg-white  w-auto flex-grow-1 h-100" id="maindiv">
+                                    <!-- Navigation Tabs -->
                                     <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
                                         <li class="nav-item w-50" role="presentation">
                                             <a class="nav-link active" id="auto-tab" data-bs-toggle="tab" href="#auto"
-                                                role="tab" aria-controls="auto" aria-selected="false" tabindex="-1">Auto
-                                                Selection</a>
+                                                role="tab" aria-controls="auto" aria-selected="true">Auto Selection</a>
                                         </li>
                                         <li class="nav-item w-50" role="presentation">
-                                            <a class="nav-link text-nowrap" id="manual-tab" data-bs-toggle="tab"
-                                                href="#manual" role="tab" aria-controls="manual"
-                                                aria-selected="true">Manual Selection</a>
+                                            <a class="nav-link text-nowrap border-0" id="manual-tab"
+                                                data-bs-toggle="tab" href="#manual" role="tab" aria-controls="manual"
+                                                aria-selected="false">
+                                                Manual Selection
+                                            </a>
                                         </li>
+
                                     </ul>
-                                    <div class="tab-content flex-grow-1 ms-auto me-auto" id="myTabContent ">
-                                        <div class="tab-pane fade show active d-flex flex-column   "
-                                            id="auto" role="tabpanel" aria-labelledby="auto-tab" style="height: 100%;">
-                                            <h2 class="m-0">Recommended Peaks DeltaT</h2>
-                                            <label for="peak-deltaT" class="autotablabel m-0">
+
+                                    <!-- Tab Content -->
+                                    <div class="tab-content flex-grow-1 " id="myTabContent">
+                                        <!-- Auto Selection Tab -->
+                                        <div class="tab-pane fade show active p-0 px-4 pt-1 pb-2" id="auto" role="tabpanel"
+                                            aria-labelledby="auto-tab">
+                                            <h2>Recommended Peaks DeltaT</h2>
+                                            <label for="peak-deltaT-manual" class="form-fs w-100">
                                                 Peak DeltaT
                                             </label>
-                                            <input type="number" id="peak-deltaT" class="form-control w-100" value="0.08"
-                                                step="0.01">
+                                            <input type="number" id="peak-deltaT-manual" class="form-fs1 w-100 "
+                                                value="0.08" step="0.01">
                                         </div>
 
-
-                                        <div class="tab-pane fade mt-2" id="manual" role="tabpanel"
+                                        <!-- Manual Selection Tab -->
+                                        <div class="tab-pane fade" id="manual" role="tabpanel"
                                             aria-labelledby="manual-tab">
-                                            <label for="peak-deltaT" class="manualtablabel">Peak DeltaT</label>
-                                            <input type="number" id="peak-deltaT" class="form-control" value="0.08"
-                                                step="0.01">
+                                            <label for="peak-deltaT-manual" class="form-fs w-100">
+                                                Peak DeltaT
+                                            </label>
+                                            <input type="number" id="peak-deltaT-manual" class="form-fs1 w-100 "
+                                                value="0.08" step="0.01">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>

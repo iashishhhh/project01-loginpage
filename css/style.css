@@ -488,32 +488,11 @@ span {
     font-size: 10px;
     font-weight: 500;
     line-height: 28px;
-
     text-align: left;
     color: #016F82;
     text-decoration-skip-ink: none;
+    border: none !important;
 
-}
-
-
-.nav-tabs .nav-link.active {
-    background-color: #016F82;
-    color: white;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-}
-
-
-
-
-
-.nav-tabs .nav-link {
-    border-radius: 0;
-}
-
-/* Remove border-radius from tab container */
-.nav-tabs {
-    border-radius: 0;
 }
 
 .autoh2 {
@@ -526,66 +505,25 @@ span {
     padding-bottom: 1px;
 }
 
-.autotablabel {
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #AFAFAF;
 
-}
 
-.manualtablabel {
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #AFAFAF;
-}
-
-.autoh2,
-.autotablabel {
-    margin: 0;
-    padding: 0;
-}
-
-/* Optional: Adjust the spacing between h2 and label */
-.autoh2 {
-    margin-top: 5px;
-}
-
-.autotablabel {
-    margin-top: 1px;
-    line-height: 2px;
-
-}
-.tab-pane h2{
-    font-size: 10px;
-}
 #peak-deltaT {
     /* width: 141px; */
     height: 36px;
     padding: 8px 14px 8px 14px;
     gap: 0px;
     border-radius: 8px;
-    border: 1px 0px 0px 0px;
+    border: 1px solid;
     opacity: 0px;
     width: 100%;
 }
-.peaks{
+
+.peaks {
     font-size: 10px;
     line-height: 1px;
 
 }
-div#myTabContent {
-    padding-bottom: 11px;
-}
+
 .nav-link {
     color: #016F82;
 }
@@ -595,12 +533,13 @@ div#myTabContent {
     border-radius: 8px;
 }
 
+/* Vertical line */
 .vertical-line-text {
     position: relative;
     display: inline-block;
     height: 200px;
     border-left: 2px solid black;
-    /* Vertical line */
+
 }
 
 .vertical-line-text h3 {
@@ -619,11 +558,8 @@ div#myTabContent {
     margin-left: 22px;
 }
 
-.tab-pane h2 +label.autotablabel {
-    font-size: 10px;
-    line-height: 10px;
-    margin: 0 !important;
-}
+/* Vertical line end */
+/* 
 
 div#auto {
     gap: 8px;
@@ -632,4 +568,74 @@ div#auto {
     left: 50%;
     transform: translate(-50%);
     width: 71%;
+}
+
+.tab-pane.mt-2 label.manualtablabel {
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0 !important;
+} */
+
+/* Styling for the manual tab container (similar to the auto tab) */
+/* div#manual {
+    gap: 8px;
+    padding: 8px 20px 11px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+}  */
+
+
+/* tab css */
+
+
+.tab-pane h6 {
+    font-size: 10px;
+    font-family: Roboto;
+    color: #5F6368;
+}
+
+.form-fs {
+    color: #AFAFAF;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 0px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.form-fs1 {
+    height: 36px;
+    padding: 8px 14px 8px 14px;
+    gap: 0px;
+    border-radius: 8px;
+    color: #5F6368;
+    border: 1px solid #EEEEEE
+}
+
+div.tab-pane{
+    padding-bottom: 11px;
+    padding-left: 27px;
+    padding-right: 20px;
+    padding-top: 7px;
+}
+
+div#manual {
+    padding-bottom: 11px;
+    padding-left: 27px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+#maindiv {
+    border-radius: 4px;
+}
+
+.tab-pane h2 {
+    font-size: 10px;
+    line-height: 10px;
+    margin: 0 !important;
 }
