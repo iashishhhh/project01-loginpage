@@ -219,7 +219,8 @@ span {
 
 .modal-dialog {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 2rem auto;
+
 }
 
 .modal-title {
@@ -245,7 +246,6 @@ span {
 }
 
 #num {
-    width: 248px;
     height: 42px;
     padding: 13px;
     gap: 0px;
@@ -628,8 +628,9 @@ div#auto {
 #auto-tab {
     border-top-left-radius: 4px;
 }
-#manual-tab{
-    border-top-right-radius:4px ;
+
+#manual-tab {
+    border-top-right-radius: 4px;
 }
 
 .nav .nav-link.active {

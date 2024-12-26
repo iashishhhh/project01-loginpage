@@ -174,34 +174,33 @@
                 <!-- Static Modal -->
                 <div class="modal fade" id="staticModal" data-bs-backdrop="static" data-bs-keyboard="false"
                     tabindex="-1" aria-labelledby="staticModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog border-bottom-none ">
+                    <div class="modal-dialog  border-bottom-none ">
                         <div class="modal-content border-bottom-none">
                             <!-- Modal Header -->
-                            <div class="modal-header border-bottom-0">
+                            <div class="modal-header border-bottom-0 ">
                                 <h5 class="modal-title" id="staticModalLabel">Load Picture</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <!-- Modal Body -->
-                            <div class="modal-body pt-0 mt-0">
+                            <div class="modal-body ">
                                 <div class="row align-items-top g-3">
                                     <!-- Left Side: Inputs -->
-                                    <div class="col-lg-6 col-md-12 col-sm-12 text-sm-center">
-                                        <div class="d-flex flex-wrap align-items-center gap-3" id="inputcent">
-                                            <!-- Picture Selector -->
-                                            <div class="d-flex flex-column">
-                                                <label for="typeNumber2" class="modalh w-sm-100 w-md-100">Current RAC
-                                                    Signals
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <!-- Nested Bootstrap Row -->
+                                        <div class="row">
+                                            <!-- First Input -->
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <label for="currentRAC" class="modalh">Current RAC Signals
                                                     Number</label>
-
-                                                <input type="number" id="num" value="50">
+                                                <input type="number" id="num" class="form-control" value="50">
                                             </div>
 
-                                            <!-- Current RAC Signals Number -->
-                                            <div class="d-flex flex-column w-sm-100 w-md-100">
-                                                <label for="typeNumber1" class="modalh">Picture Selector</label>
-
-                                                <input type="number" id="num" placeholder="Original Picture">
+                                            <!-- Second Input -->
+                                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                                <label for="pictureSelector" class="modalh">Picture Selector</label>
+                                                <input type="number" id="num" class="form-control"
+                                                    placeholder="Original Picture">
                                             </div>
                                         </div>
                                     </div>
@@ -209,19 +208,26 @@
 
 
 
-                                    <!-- Right Side: Buttons -->
-                                    <div
-                                        class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column flex-md-row justify-content-end align-items-center pt-4 gap-3 pb-3">
 
-                                        <button class="btncol border-0 rounded d-flex  align-items-center">
-                                            <span><img src="img/formkit_start.png" class="mx-2 mb-1" alt=""></span>
-                                            Start Picture Analysis
-                                        </button>
-                                        <button class="btncol2 px-3 d-flex justify align-items-center">
-                                            <span><img src="img/material-symbols_stop-outline.png" alt=""></span>
-                                            Stop Picture Analysis
-                                        </button>
+                                    <div class="col-lg-6 col-md-12 col-sm-12">
+                                        <!-- Buttons Row -->
+                                        <div
+                                            class="d-flex flex-wrap flex-lg-nowrap justify-content-lg-end justify-content-center align-items-center gap-3 pt-4 pb-3">
+                                            <!-- Start Button -->
+                                            <button class="btncol d-flex align-items-center px-4 ">
+                                                <span><img src="img/formkit_start.png" class="me-2 mb-1" alt=""></span>
+                                                Start Picture Analysis
+                                            </button>
+
+                                            <!-- Stop Button -->
+                                            <button class="btncol2  d-flex align-items-center">
+                                                <span><img src="img/material-symbols_stop-outline.png" class="me-2"
+                                                        alt=""></span>
+                                                Stop Picture Analysis
+                                            </button>
+                                        </div>
                                     </div>
+
 
                                     <div class="col-lg-9 ">
                                         <div class="canvas"></div>
@@ -473,7 +479,7 @@
                                     <!-- Navigation Tabs -->
                                     <ul class="nav border-0" id="myTab" role="tablist">
                                         <li class="w-50" role="presentation">
-                                            <a class="nav-link active"  id="auto-tab" data-bs-toggle="tab" href="#auto"
+                                            <a class="nav-link active" id="auto-tab" data-bs-toggle="tab" href="#auto"
                                                 role="tab" aria-controls="auto" aria-selected="false">Auto Selection</a>
                                         </li>
                                         <li class="w-50" role="presentation">
