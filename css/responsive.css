@@ -17,17 +17,6 @@
 
     }
 
-    #text {
-        width: 159px;
-        height: 44px;
-        padding: 10px 29px 10px 29px;
-        gap: 10px;
-        border-radius: 9px 0px 0px 0px;
-        opacity: 0px;
-        font-size: 13px;
-        border-radius: 9px;
-        background: #FFFFFF;
-    }
 
     .modal-title {
         font-size: 15px;
@@ -58,16 +47,7 @@
         font-size: 8px;
     }
 
-    .heading {
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 28px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #5F6368;
-    }
+  
 
     .card-wrap h6 {
         font-size: 14px;
