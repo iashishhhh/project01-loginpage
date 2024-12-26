@@ -524,14 +524,11 @@ span {
 
 }
 
-.nav-link {
-    color: #016F82;
-}
-
 .color {
     width: fit-content;
     border-radius: 8px;
 }
+
 
 /* Vertical line */
 .vertical-line-text {
@@ -626,4 +623,20 @@ div#auto {
     font-size: 10px;
     line-height: 10px;
     margin: 0 !important;
+}
+
+#auto-tab {
+    border-top-left-radius: 4px;
+}
+#manual-tab{
+    border-top-right-radius:4px ;
+}
+
+.nav .nav-link.active {
+    background-color: #016F82;
+    /* Choose your desired color */
+    color: #fff;
+    /* Adjust text color for contrast */
+    border: 1px solid #016F82;
+    /* Match border with background */
 }
