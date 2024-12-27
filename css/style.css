@@ -109,9 +109,10 @@ span {
     background-color: #F5F5F5;
     border-radius: 8px;
     border: none;
-    padding-bottom: 32px;
-
+    padding-bottom: 31px;
 }
+
+
 
 .content h2 {
     font-family: Roboto;
@@ -323,7 +324,7 @@ select#form {
 
 
 .scroll {
-    overflow-y: auto  ;
+    overflow-y: auto;
     height: 349px;
     scrollbar-width: thin;
     border-radius: 10px;
@@ -338,7 +339,7 @@ select#form {
     line-height: 28px;
     color: #5F6368;
 
-} 
+}
 
 
 .form-label1 {
