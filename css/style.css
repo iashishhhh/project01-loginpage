@@ -114,7 +114,7 @@ span {
     background-color: #F5F5F5;
     border-radius: 8px;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 32px;
 
 }
 
@@ -335,7 +335,7 @@ span {
 .scrollable-table {
     overflow: auto;
     width: 100%;
-    /* height: 274px; */
+    height: 274px;
     scrollbar-width: thin;
     border-radius: 10px;
 }
@@ -547,33 +547,6 @@ span {
     margin-left: 22px;
 }
 
-/* Vertical line end */
-/* 
-
-div#auto {
-    gap: 8px;
-    padding: 8px 20px 11px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    width: 71%;
-}
-
-.tab-pane.mt-2 label.manualtablabel {
-    font-size: 10px;
-    line-height: 10px;
-    margin: 0 !important;
-} */
-
-/* Styling for the manual tab container (similar to the auto tab) */
-/* div#manual {
-    gap: 8px;
-    padding: 8px 20px 11px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    width: 90%;
-}  */
 
 
 /* tab css */
@@ -590,10 +563,8 @@ div#auto {
     font-family: Roboto;
     font-size: 10px;
     font-weight: 500;
-    line-height: 0px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+
+
 }
 
 .form-fs1 {
@@ -603,8 +574,6 @@ div#auto {
     color: #5F6368;
     border: 1px solid #EEEEEE
 }
-
-
 
 #maindiv {
     border-radius: 4px;
@@ -626,9 +595,6 @@ div#auto {
 
 .nav .nav-link.active {
     background-color: #016F82;
-    /* Choose your desired color */
     color: #fff;
-    /* Adjust text color for contrast */
     border: 1px solid #016F82;
-    /* Match border with background */
 }
